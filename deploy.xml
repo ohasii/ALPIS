@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ALPIS>
+  <Event name="01" description="Enrolling devices">
+    <NetworkSettings>
+      <Host name="docker-2f" domain="ohasi.lan"/>
+      <Network iface="enp0s1" protocol="inet" type="static" address="10.43.1.242" netmask="255.255.255.0" gateway="10.43.1.254" />
+    </NetworkSettings>
+    <NetworkPolicy>
+      <IPV6Enabled>0</IPV6Enabled>
+    <NetworkPolicy>
+  </Event>
+  <Event name="02" description="Installing required packages">
+    <InstallPackage>
+      <UpdatePackageInfo>1</UpdatePackageInfo>
+      <PackageList>
+        <Package name="sudo"/>
+        <Package name="wget"/>
+      </PackageList>
+    </InstallPackage>
+  </Event>
+  <Event name="03" description="User accounting">
+    <Group action="add_to_user" group="sudo" user="ohasii"/>
+  </Event>
+</ALPIS>
