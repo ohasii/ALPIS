@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alpis>
+  <NetworkSettings>
+    <Interface name="enp1s0" protocol="inet" type="static" ip="10.43.1.242" submask="255.255.255.0" gateway="10.43.1.254"/>
+  </NetworkSettings>
+  <UserProvisioning>
+    <AddNewGroup uid="9000" name="docker" description="Docker Group" />
+    <AddNewUser uid="9000" name="docker-usr" gid="9000" />
+  </UserProvisioning>
+</alpis>
+root@docke
