@@ -1,1 +1,13 @@
-
+<?xml version="1.0" encoding="UTF-8" ?>
+<ALPIS>
+  <Event name="01" description="Enabling Proxmox Repository">
+    <CreateFile filepath="teste">
+      <data>
+        <![CDATA[
+# PVE pve-no-subscription repository provided by proxmox.com,
+deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription
+        ]]>
+      </data>
+    </CreateFile>
+  </Event>
+</ALPIS>
