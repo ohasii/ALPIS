@@ -10,16 +10,4 @@ deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription
       </data>
     </CreateFile>
   </Event>
-  <Event name="02" description="Installing required packages">
-    <InstallPackage>
-      <UpdatePackageInfo>1</UpdatePackageInfo>
-      <PackageList>
-        <Package name="sudo"/>
-        <Package name="wget"/>
-      </PackageList>
-    </InstallPackage>
-  </Event>
-  <Event name="03" description="User accounting">
-    <Group action="add_to_user" group="sudo" user="ohasii"/>
-  </Event>
 </ALPIS>
